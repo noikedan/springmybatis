@@ -1,6 +1,6 @@
 # springmybatis
 
-./mvnw clean package -DskipTests
+./mvnw clean package -DskipTests  
 docker build ./ -t springbootapp
 
 CREATE TABLE IF NOT EXISTS staff (
