@@ -1,6 +1,6 @@
 # springmybatis
 
-##docker-compose 下で Java + Spring Boot + PostgreSQL (Mybatis)
+##　docker-compose 下で Java + Spring Boot + PostgreSQL (Mybatis)
 
 ./mvnw clean package -DskipTests  
 docker build ./ -t springbootapp
