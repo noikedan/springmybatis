@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS staff (
+  id SERIAL,
+  name VARCHAR(60) NOT NULL,
+  email VARCHAR(254) NOT NULL,
+  status BOOLEAN NOT NULL,
+  registration DATE NOT NULL
+);
