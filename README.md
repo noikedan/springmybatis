@@ -3,8 +3,8 @@
 ## docker-compose 下で Java + Spring Boot + PostgreSQL (Mybatis)
 
 ./mvnw clean package -DskipTests  
-docker build ./ -t springbootapp 
-docker-compose up
+docker build ./ -t springbootapp  
+docker-compose up  
 
 CREATE TABLE IF NOT EXISTS staff (
   id SERIAL,
