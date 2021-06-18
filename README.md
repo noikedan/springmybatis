@@ -28,6 +28,8 @@ docker exec -it postgres bash
 psql -h localhost -p 5432 -U postgres -d postgres
 
 Docker用の場合はapplication.ymlを下記に書き換えが必要
+
+
 src/main/resources/application.properties 
 @@ -0,0 +1,8 @@
 mybatis.configuration.map-underscore-to-camel-case=true
