@@ -5,7 +5,6 @@
 ./mvnw clean package -DskipTests  
 docker build ./ -t springbootapp
 docker-compose up
-こうやってると思います。
 
 CREATE TABLE IF NOT EXISTS staff (
   id SERIAL,
