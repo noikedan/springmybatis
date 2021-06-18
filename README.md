@@ -27,26 +27,5 @@ docker exec -it postgres bash
 
 psql -h localhost -p 5432 -U postgres -d postgres
 
-Docker用の場合はapplication.ymlを下記に書き換えが必要
+Docker用の場合は/resources/application.ymlをapplication.propertiesに書き換えることが必要。はじめてコミットを参照
 
-
-src/main/resources/application.properties 
-
-
-@@ -0,0 +1,8 @@
-mybatis.configuration.map-underscore-to-camel-case=true
-
-
-#spring.datasource.url=jdbc:h2:mem:testdb
-
-
-spring.datasource.url=jdbc:postgresql://postgres:5432/testdb
-
-
-spring.datasource.driver-class-name=org.postgresql.Driver
-
-
-spring.datasource.username= postgres
-spring.datasource.password=admin
-spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.PostgreSQLDialect
-spring.jpa.hibernate.ddl-auto=none
