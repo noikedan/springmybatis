@@ -27,5 +27,5 @@ docker exec -it postgres bash
 
 psql -h localhost -p 5432 -U postgres -d postgres
 
-Docker用の場合は/resources/application.ymlをapplication.propertiesに書き換えることが必要。はじめてコミットを参照
+Docker用の場合は/resources/application.ymlをapplication.propertiesに書き換えることが必要。historyからはじめてコミットを参照
 
